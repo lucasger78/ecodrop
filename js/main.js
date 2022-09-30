@@ -60,36 +60,63 @@
     });
 
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
+});
+
+//Demora en entrega
+
+let miBoton = document.getElementById(`compra1`);
+
+  miBoton.addEventListener("click", (e) => {
+    Swal.fire({
+        title: 'ESTAMOS CON DEMORA EN LA ENTREGA',     
+        text: 'aproximadamente 20 días',
+        imageUrl: 'img/demoracompra.png',
+        imageWidth: 70,
+        imageHeight: 70,
+        duration:3500,
+        showCancelButton: true,
+        confirmButtonColor: '#e88f2a',
+        cancelButtonColor: '#d33',        
+        cancelButtonText: "CANCELAR",
+        confirmButtonText: `<a class= text-white href="https://mercadoshops.com.ar">COMPRAR</a>`,
+    }); 
+
+let miBoton2 = document.getElementById(`compra2`);
+
+  miBoton2.addEventListener("click", (e) => {
+    Swal.fire({
+        title: 'ESTAMOS CON DEMORA EN LA ENTREGA',     
+        text: 'aproximadamente 20 días',
+        imageUrl: 'img/demoracompra.png',
+        imageWidth: 70,
+        imageHeight: 70,
+        duration:3500,
+        showCancelButton: true,
+        confirmButtonColor: '#e88f2a',
+        cancelButtonColor: '#d33',
+        cancelButtonText: "CANCELAR",
+        confirmButtonText: `<a class= text-white href="https://mercadoshops.com.ar">COMPRAR</a>`,        
+    }); 
+
+    let miBoton3 = document.getElementById(`compra3`);
+
+    miBoton3.addEventListener("click", (e) => {
+      Swal.fire({
+          title: 'ESTAMOS CON DEMORA EN LA ENTREGA',     
+          text: 'aproximadamente 20 días',
+          imageUrl: 'img/demoracompra.png',
+          imageWidth: 70,
+          imageHeight: 70,
+          duration:3500,
+          showCancelButton: true,
+          confirmButtonColor: '#e88f2a',
+          cancelButtonColor: '#d33',
+          cancelButtonText: "CANCELAR",
+          confirmButtonText: `<a class= text-white href="https://mercadoshops.com.ar">COMPRAR</a>`,        
+        
+        }); 
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        margin: 45,
-        dots: true,
-        loop: true,
-        center: true,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
-    });
-    
-})(jQuery);
-
+  })
+})
+});

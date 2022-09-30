@@ -233,64 +233,76 @@
     </div>
     <!-- About End -->
 
-    <!-- Filtros Start -->
+    <!-- Filtros -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
                 <!-- <h2 class="text-primary font-secondary">Team Members</h2> -->
                 <h1 class="display-4 text-uppercase">Nuestros Filtros</h1>
             </div>
+            <span>
+            <div class="container d-flex">
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 product-item-title d-flex">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-90" src="img/filtro-1.jpg" alt="" style="float:top ;">
-                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">                                
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="btn btn-dark bg-dark text-center p-4 w-100" >
-                                <h4><a href="https://mercadoshops.com.ar" class="text-uppercase text-primary">Comprar</a></h4>
-                                
-                                </div>
-                           
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-90" src="img/filtro-2.jpg" alt="" style="float:top ;">                           
-                        </div>
-                        
-                        <div>
-                            <div class="btn btn-dark bg-dark text-center p-4 w-100" >
-                                <h4><a href="https://mercadoshops.com.ar" class="text-uppercase text-primary">Comprar</a></h4>
-                                
-                                </div>
+                            <img class="img-fluid w-80" src="img/filtro-1.jpg" alt="" style="display:flex ;">
                             
                         </div>
+                       <!-- con stock -->
+                       <!-- <div class="btn btn-dark bg-dark text-center p-4 w-100"> -->
+                        <!-- <h4><a href="https://mercadoshops.com.ar" class="text-uppercase text-primary">Comprar</a></h4> -->
+
+                        <!-- sin stock -->
+                        <div class="btn btn-dark bg-dark text-center p-4 w-100" id="compra1">                           
+                            <h4 class="text-uppercase text-primary">COMPRAR</h4>
+                            
+                            
+                            </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-6 product-item-title d-flex">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-90" src="img/filtro-3.jpg" alt="" style="float:top ;">                            
+                            <img class="img-fluid w-80" src="img/filtro-2.jpg" alt="" style="display:flex ;">
+                          
                         </div>
-                        
-                        <div>
-                            <div class="btn btn-dark bg-dark text-center p-4 w-100" >
-                                <h4><a href="https://mercadoshops.com.ar" class="text-uppercase text-primary">Comprar</a></h4>
-                                
-                                </div>
-                        </div>
+                       
+                        <!-- con stock -->
+                       <!-- <div class="btn btn-dark bg-dark text-center p-4 w-100"> -->
+                        <!-- <h4><a href="https://mercadoshops.com.ar" class="text-uppercase text-primary">Comprar</a></h4> -->
+
+                        <!-- sin stock -->
+                        <div class="btn btn-dark bg-dark text-center p-4 w-100" id="compra2">                           
+                            <h4 class="text-uppercase text-primary">COMPRAR</h4>
+                            
+                            
+                            </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 product-item-title d-flex">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-80" src="img/filtro-3.jpg" alt="" style="display:flex ;">
+                           
+                        </div>
+                        <!-- con stock -->
+                       <!-- <div class="btn btn-dark bg-dark text-center p-4 w-100"> -->
+                        <!-- <h4><a href="https://mercadoshops.com.ar" class="text-uppercase text-primary">Comprar</a></h4> -->
+
+                        <!-- sin stock -->
+                        <div class="btn btn-dark bg-dark text-center p-4 w-100" id="compra3">                           
+                            <h4 class="text-uppercase text-primary">COMPRAR</h4>
+                            
+                            
+                            </div>
+                    </div>
+                </div>
+            </span>
             </div>
         </div>
     </div>
+</div>
     <!-- Filtros End -->
     
      <!-- Footer Start -->
@@ -367,6 +379,8 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
