@@ -44,6 +44,10 @@
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })
+
+        $('#close-modal').click(() => {
+            $("#video").removeAttr('src');
+            });
     });
     
     
