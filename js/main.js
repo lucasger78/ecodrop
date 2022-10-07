@@ -38,6 +38,7 @@
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "showinfo=0");
+            $video.pause();
         })
 
         $('#videoModal').on('hide.bs.modal', function (e) {
