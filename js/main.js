@@ -29,27 +29,52 @@
 
 
     // Modal Video
-    // $(document).ready(function () {
-    //     var $videoSrc;
-    //     $('.btn-play').click(function () {
-    //         $videoSrc = $(this).data("src");
-    //     });
-    //     console.log($videoSrc);
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.btn-play').click(function () {
+            $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
 
-    //     $('#videoModal').on('shown.bs.modal', function (e) {
-    //         $("#video").attr('src', $videoSrc + "showinfo=0");
+        $('#videoModal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc + "showinfo=0");
             
-    //     })
+        })
 
-    //     $('#videoModal').on('hide.bs.modal', function (e) {
-    //         $("#video").attr('src', $videoSrc);
-    //     })
+        $('#videoModal').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
 
-    //     $('#close-modal').click(() => {
-    //         $("#video").removeAttr('src');
-    //         });
-    // });
-    
+        $('#close-modal').click(() => {
+            $("#video").removeAttr('src');
+            });
+    });
+
+
+    // Modal-2 Video
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.btn-play').click(function () {
+            $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
+
+        $('#videoModal-2').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc + "showinfo=0");
+            
+        })
+
+        $('#videoModal-2').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
+
+        $('#close-modal').click(() => {
+            $("#video").removeAttr('src');
+            });
+        
+          
+    }); 
+     
     
     // Back to top button
     $(window).scroll(function () {
